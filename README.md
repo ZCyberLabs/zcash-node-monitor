@@ -1,26 +1,38 @@
 # Zcash Node Monitor
 
-Simple Python script to monitor a local `zcashd` full node via JSON-RPC.
+A lightweight CLI tool to inspect a local `zcashd` full node using JSON-RPC.  
+Designed for developers, node operators, researchers, and anyone working with the Zcash network.
+
+---
 
 ## Features
 
-- Shows basic chain and sync status:
-  - Chain name
-  - Current blocks vs. estimated height
-  - Verification progress
-  - Initial block download state
-- Displays node and network info:
-  - Peers
-  - Version and protocol version
-- Prints value pools (transparent, sprout, sapling, orchard, lockbox)
+### Chain and sync status
+- Current block height
+- Estimated block height
+- Verification progress
+- Initial block download state
+
+### Node and network information
+- Node version
+- Protocol version
+- Peer count
+- Basic networking info
+
+### Value pools
+- Transparent pool
+- Sprout pool
+- Sapling pool
+- Orchard pool
+- Lockbox (if exposed)
+
+---
 
 ## Requirements
 
-- Running `zcashd` node with RPC enabled
 - Python 3
-- `requests` library
+- A running `zcashd` node with RPC enabled
+- The `requests` Python library
 
-You can install `requests` via:
+Install the dependency via:
 
-```bash
-pip install --user requests
