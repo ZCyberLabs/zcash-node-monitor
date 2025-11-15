@@ -60,6 +60,7 @@ pip install requests
 
 Run the monitor:
 
+python3 zcash_monitor.py
 
 The script automatically reads RPC configuration from:
 
