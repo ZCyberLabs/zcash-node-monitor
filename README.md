@@ -36,3 +36,60 @@ Designed for developers, node operators, researchers, and anyone working with th
 
 Install the dependency via:
 
+pip install --user requests
+
+---
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/ZCyberLabs/zcash-node-monitor
+
+
+(Optional) create a virtual environment:
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install requests
+
+
+---
+
+## Usage
+
+Run the monitor:
+
+
+The script automatically reads RPC configuration from:
+
+~/.zcash/zcash.conf
+
+Future versions will support CLI flags like:
+
+--rpcuser
+--rpcpassword
+--rpchost
+--rpcport
+
+---
+
+## Roadmap
+
+- CLI argument support
+- JSON output mode
+- Prometheus metrics exporter
+- Docker image
+- Systemd monitoring service
+- Alerting integrations
+- Improved error handling
+
+---
+
+## License
+
+MIT License  
+See the LICENSE file for full details.
+
+
+
